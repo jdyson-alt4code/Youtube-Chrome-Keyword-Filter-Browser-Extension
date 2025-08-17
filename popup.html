@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyword Filters</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 10px; width: 300px; }
+    input { width: 200px; }
+    button { margin-left: 5px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 5px 0; display: flex; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <h1>Keyword Filters</h1>
+  <input type="text" id="keyword" placeholder="Enter keyword (e.g., politics)">
+  <button id="add">Add</button>
+  <ul id="list"></ul>
+  <button id="export">Export to File</button>
+  <input type="file" id="import" accept=".json" style="display: none;">
+  <button id="importBtn">Import from File</button>
+  <script src="popup.js"></script>
+</body>
+</html>

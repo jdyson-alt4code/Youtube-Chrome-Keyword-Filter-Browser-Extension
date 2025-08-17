@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Keyword Filter Extension",
+  "version": "1.0",
+  "description": "Hide YouTube recommendations based on custom keyword filters.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
